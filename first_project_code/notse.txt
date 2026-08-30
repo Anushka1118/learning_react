@@ -1,0 +1,31 @@
+Q. where does react store elements created in jsx while calling 'root.render'?
+Ans- in the div that we create in html with id='root'
+
+Q. output of 'console.log(<h1>hello world</h1>)'?
+Ans- an object, unlike creating an html element in vanilla DOM js, what gets created from 
+    jsx we have in our react is a plain js objectthat react will use to fill in the view.
+
+Q. error in 'root.render(<h1>hi there</h1>
+                         <p>this is my website</p>)'
+Ans- we cant have two sibiling element rendering together, we need a wrapper to make it one parent element.
+
+Q. declarative & imperative
+Ans- imperative-needs step by step ,specific instructions , to accomplish the task.(js)
+    declarative- we can rely on libraby or framework to do the heavy lifting, after we describe what should show up on the page.(react)
+
+Q. composable
+Ans-reusable/flexible smaler elements for larger elements.
+
+Q. react component?
+Ans- a function that return react element.(ui)
+
+Q. function tempFunc(){  --TempFunc would be correct
+    return(
+        <h1> hello there</h1>
+    )
+}
+Ans- weneed pascal case istead of camel case 
+
+Q. root.render(TempFunction())
+Ans- root.render(<TempFunc/>)
+

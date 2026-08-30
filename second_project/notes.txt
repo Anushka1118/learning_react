@@ -1,0 +1,20 @@
+Q. why props?
+Ans-make a component to make it reusable.
+
+Q.can we pass custom props(eg "blahblahblah={true}") to a native 
+DOM element?{eg <div blahblahblah={true}>)
+
+Ans- no bcz the jsx we use to describe native DOM elements will only be turned into 
+real dom element by react and real dom elementonly have the propertes specified in the 
+html specification.
+
+Qhow do i receive prop in a component?
+function NavBar(props){
+    return(
+        <header></header>
+    )
+}
+
+Q. datatype of prop when component receive it?
+Ans-object
+
