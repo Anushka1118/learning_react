@@ -1,9 +1,29 @@
 import Jokes from "./jokes"
 import { createRoot } from "react-dom/client";
+import jokes from "./joke_data"
 
 const root=createRoot(document.getElementById("root"))
+console.log(jokes)
+
+const jokeElement=jokes.map((jk,ind)=>{
+    return(
+        <Jokes
+        key={ind}
+        setup={jk.setup}
+        punchline={jk.punchline}/>
+
+    );
+});
+
+
 root.render(
     <main>
+        {jokeElement}
+        
+    </main>
+
+
+    /*<main>
         <Jokes
             punchline="I told my computer I needed a break—it said, 
             “No problem, I’ll go to sleep.” "       //string value
@@ -27,5 +47,5 @@ root.render(
             punchline="swarm"
         />
 
-    </main>
+    </main>*/
 )

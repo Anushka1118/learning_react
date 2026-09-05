@@ -18,3 +18,17 @@ function NavBar(props){
 Q. datatype of prop when component receive it?
 Ans-object
 
+Q. what does ".map()" array method do?
+  vanilla js array method ,returns new array. whever gets returned frim the callback functioon 
+  provided is placed at same index in the array.
+  usually we take the item from the original array and modify them in some ways.
+
+
+Q.what do we ususally use  '.map()' in react for?
+convert array of ra data into an arrayof jsx element that can be 
+displayed on page.
+
+Q.why is using '.map()' better than just creating the component manually by typing them out?
+1. we usually dont have whole data ahead of time when were building
+2.by using it, it makes the code more self sustaining.
+3. easy to modify

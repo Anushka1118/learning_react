@@ -1,23 +1,28 @@
+import data from "../travel_data"
+
+
 export default function Entry(props){
+
+    
+    //console.log(props)
     return(
         <article className="journal">
             <div className="fuji_pic">
-                <img src="./fuji.jpg" alt="fuji"/>
+                <img src={props.entry.img.src} alt={props.entry.img.title}/>
             </div>
 
             <div>
                 <div className="mark">
-                    <img className=" fuji " src="../marker.png" alt="map marker icon"/>
-                    <span> Japan </span>
-                    <a href="https://en.wikipedia.org/wiki/Mount_Fuji">view detail</a>
+                    <img
+                     className=" fuji " 
+                     src={props.entry.map.src} alt={props.entry.map.alt}/>
+                    <span> {props.entry.country} </span>
+                    <a href={props.entry.googlemap}>view detail</a>
         
                 </div>
         
-                <h2>MOUNT FUJI</h2>
-                <h3 className="para"> Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of
-                Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 
-                meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred
-                mountains, and summit hikes remain a popular activity.</h3>
+                <h2>{props.entry.title}</h2>
+                <h3 className="para"> {props.entry.text}</h3>
             </div>
         
         </article>
